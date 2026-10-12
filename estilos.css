@@ -353,8 +353,9 @@
             }
         }
 
-/* BOTÓN DE MODO CLARO / OSCURO */
-.tema-boton {
+/* Botones de tema e idioma */
+.tema-boton,
+.idioma-boton {
     display: block;
     margin: 8px auto;
     min-width: 170px;
@@ -389,7 +390,8 @@ body.modo-oscuro select {
 body.modo-oscuro .info h3,
 body.modo-oscuro .tarjeta h3 { color: #60a5fa; }
 @media (max-width: 768px) {
-    .tema-boton { width: 90%; }
+    .tema-boton,
+    .idioma-boton { width: 90%; }
 }
 
 .pregunta label { display:block; margin:10px 0; font-weight:normal; }
