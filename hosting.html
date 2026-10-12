@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hosting y dominios | Guía de Desarrollo Web</title>
+<link rel="stylesheet" href="estilos.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<header><h1> Guía de Desarrollo Web</h1><p>HTML • CSS • JavaScript • jQuery • JSON</p></header>
+<nav><ul><li><a href="index.html" >Inicio</a></li><li><a href="javascript.html" >JavaScript</a></li><li><a href="jquery.html" >jQuery</a></li><li><a href="json.html" >JSON</a></li><li><a href="hosting.html" class="activo">Hosting</a></li><li><a href="cuestionario.html" >Cuestionario</a></li></ul><button class="boton tema-boton" id="botonTema" type="button" aria-pressed="false">🌙 Modo oscuro</button></nav>
+<main class="contenedor">
+<section><div class="contenedor"><h2> Web Hosting y Dominios</h2>
+<div class="info"><h3>¿Qué es Web Hosting?</h3><p>Es un servicio que guarda los archivos de un sitio web y los entrega a los visitantes a través de internet.</p><ul><li><strong>Compartido:</strong> varios sitios usan los recursos de un servidor.</li><li><strong>VPS:</strong> un servidor virtual con recursos asignados.</li><li><strong>Nube:</strong> utiliza infraestructura de varios servidores.</li><li><strong>Vercel:</strong> plataforma que facilita publicar proyectos web, especialmente sitios estáticos y aplicaciones frontend, conectando repositorios como GitHub.</li></ul></div>
+<div class="info"><h3>¿Qué es un dominio?</h3><p>Es el nombre legible que se utiliza para encontrar un sitio web, por ejemplo, ejemplo.com.</p><p><strong>TLD:</strong> terminación del dominio, como .com, .net u .org. <strong>Subdominio:</strong> una parte añadida delante del dominio, como blog.ejemplo.com.</p></div>
+<div class="info"><h3>¿Cómo funciona la propagación DNS?</h3><pre><code>Escribes el dominio
+       ↓
+El navegador consulta el DNS
+       ↓
+El DNS encuentra la dirección IP
+       ↓
+El navegador se conecta al servidor
+       ↓
+Se muestra la página web</code></pre><p>Los cambios DNS pueden tardar en actualizarse en diferentes redes y proveedores.</p></div>
+<div class="info"><h3>Recursos y bibliografía</h3><p><a href="https://vercel.com/docs" target="_blank">Documentación de Vercel</a></p><p><a href="https://www.cloudflare.com/learning/dns/what-is-dns/" target="_blank">Cloudflare: ¿Qué es DNS?</a></p><p><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></p></div></div></section>
+</main>
+<footer><h3> Guía de Desarrollo Web</h3><p>Proyecto académico de desarrollo web.</p><p>HTML • CSS • JavaScript • jQuery • JSON</p><p>© 2026 - Todos los derechos reservados</p></footer>
+</body></html>

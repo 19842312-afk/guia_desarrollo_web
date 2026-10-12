@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JSON | Guía de Desarrollo Web</title>
+<link rel="stylesheet" href="estilos.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<header><h1> Guía de Desarrollo Web</h1><p>HTML • CSS • JavaScript • jQuery • JSON</p></header>
+<nav><ul><li><a href="index.html" >Inicio</a></li><li><a href="javascript.html" >JavaScript</a></li><li><a href="jquery.html" >jQuery</a></li><li><a href="json.html" class="activo">JSON</a></li><li><a href="hosting.html" >Hosting</a></li><li><a href="cuestionario.html" >Cuestionario</a></li></ul><button class="boton tema-boton" id="botonTema" type="button" aria-pressed="false">🌙 Modo oscuro</button></nav>
+<main class="contenedor">
+<section id="json">
+<div class="contenedor">
+<h2> JSON</h2>
+<div class="info">
+<h3>¿Qué es JSON?</h3>
+<p>
+                    JSON significa JavaScript Object Notation.
+                    Es un formato utilizado para almacenar
+                    y transportar información.
+                </p>
+</div>
+<div class="info">
+<h3>Ejemplo de JSON</h3>
+<pre><code>{
+    "nombre": "Juan",
+    "edad": 18,
+    "curso": "Programación",
+    "activo": true
+}</code></pre>
+</div>
+</div>
+</section><section><div class="contenedor"><h2>Cómo se usa JSON con APIs</h2><div class="info"><p>Las aplicaciones pueden solicitar datos a un servidor mediante una API. A menudo, el servidor responde con JSON, que JavaScript puede convertir en objetos para mostrar la información.</p><pre><code>fetch("https://ejemplo.com/api/productos")
+  .then(respuesta => respuesta.json())
+  .then(datos => console.log(datos));</code></pre></div></div></section><section id="recursos">
+<div class="contenedor">
+<h2>Recursos y Bibliografía</h2>
+<div class="tarjetas">
+<div class="tarjeta">
+<h3>MDN Web Docs</h3>
+<p>
+                        Documentación y recursos para aprender
+                        tecnologías web.
+                    </p>
+<br/>
+<a class="boton" href="https://developer.mozilla.org/" target="_blank">
+                        Visitar MDN
+                    </a>
+</div>
+<div class="tarjeta">
+<h3>W3Schools</h3>
+<p>
+                        Sitio educativo con tutoriales y ejemplos
+                        de programación web.
+                    </p>
+<br/>
+<a class="boton" href="https://www.w3schools.com/" target="_blank">
+                        Visitar W3Schools
+                    </a>
+</div>
+<div class="tarjeta">
+<h3>jQuery</h3>
+<p>
+                        Documentación oficial de la biblioteca jQuery.
+                    </p>
+<br/>
+<a class="boton" href="https://jquery.com/" target="_blank">
+                        Visitar jQuery
+                    </a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer><h3> Guía de Desarrollo Web</h3><p>Proyecto académico de desarrollo web.</p><p>HTML • CSS • JavaScript • jQuery • JSON</p><p>© 2026 - Todos los derechos reservados</p></footer>
+</body></html>

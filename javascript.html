@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript | Guía de Desarrollo Web</title>
+<link rel="stylesheet" href="estilos.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<header><h1> Guía de Desarrollo Web</h1><p>HTML • CSS • JavaScript • jQuery • JSON</p></header>
+<nav><ul><li><a href="index.html" >Inicio</a></li><li><a href="javascript.html" class="activo">JavaScript</a></li><li><a href="jquery.html" >jQuery</a></li><li><a href="json.html" >JSON</a></li><li><a href="hosting.html" >Hosting</a></li><li><a href="cuestionario.html" >Cuestionario</a></li></ul><button class="boton tema-boton" id="botonTema" type="button" aria-pressed="false">🌙 Modo oscuro</button></nav>
+<main class="contenedor">
+<section id="javascript">
+<div class="contenedor">
+<h2> JavaScript</h2>
+<div class="info">
+<h3>¿Qué es JavaScript?</h3>
+<p>
+                    JavaScript es un lenguaje de programación
+                    utilizado para agregar interactividad
+                    y funcionalidades a las páginas web.
+                </p>
+</div>
+<div class="info">
+<h3>Ejemplo</h3>
+<pre><code>function saludar() {
+    alert("¡Hola! Bienvenido.");
+}</code></pre>
+</div>
+<div class="demo">
+<h3>Demostración de JavaScript</h3>
+<p id="mensaje">
+                    Presiona el botón
+                </p>
+<button class="boton" onclick="cambiarMensaje()">
+                    Cambiar mensaje
+                </button>
+</div>
+</div>
+</section><section id="ejemplos">
+<div class="contenedor">
+<h2> Ejemplos de Código</h2>
+<div class="tarjetas">
+<div class="tarjeta">
+<h3>Variable</h3>
+<pre><code>let nombre = "Carlos";</code></pre>
+</div>
+<div class="tarjeta">
+<h3>Condicional</h3>
+<pre><code>if (edad &gt;= 18) {
+    console.log("Mayor de edad");
+}</code></pre>
+</div>
+<div class="tarjeta">
+<h3>Función</h3>
+<pre><code>function sumar(a, b) {
+    return a + b;
+}</code></pre>
+</div>
+<div class="tarjeta">
+<h3>Arreglo</h3>
+<pre><code>let frutas = [
+    "Manzana",
+    "Banano",
+    "Uva"
+];</code></pre>
+</div>
+</div>
+</div>
+</section><section id="recursos">
+<div class="contenedor">
+<h2> Recursos y Bibliografía</h2>
+<div class="tarjetas">
+<div class="tarjeta">
+<h3>MDN Web Docs</h3>
+<p>
+                        Documentación y recursos para aprender
+                        tecnologías web.
+                    </p>
+<br/>
+<a class="boton" href="https://developer.mozilla.org/" target="_blank">
+                        Visitar MDN
+                    </a>
+</div>
+<div class="tarjeta">
+<h3>W3Schools</h3>
+<p>
+                        Sitio educativo con tutoriales y ejemplos
+                        de programación web.
+                    </p>
+<br/>
+<a class="boton" href="https://www.w3schools.com/" target="_blank">
+                        Visitar W3Schools
+                    </a>
+</div>
+<div class="tarjeta">
+<h3>jQuery</h3>
+<p>
+                        Documentación oficial de la biblioteca jQuery.
+                    </p>
+<br/>
+<a class="boton" href="https://jquery.com/" target="_blank">
+                        Visitar jQuery
+                    </a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer><h3> Guía de Desarrollo Web</h3><p>Proyecto académico de desarrollo web.</p><p>HTML • CSS • JavaScript • jQuery • JSON</p><p>© 2026 - Todos los derechos reservados</p></footer>
+</body></html>

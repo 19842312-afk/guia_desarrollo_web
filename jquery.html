@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery | Guía de Desarrollo Web</title>
+<link rel="stylesheet" href="estilos.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<header><h1> Guía de Desarrollo Web</h1><p>HTML • CSS • JavaScript • jQuery • JSON</p></header>
+<nav><ul><li><a href="index.html" >Inicio</a></li><li><a href="javascript.html" >JavaScript</a></li><li><a href="jquery.html" class="activo">jQuery</a></li><li><a href="json.html" >JSON</a></li><li><a href="hosting.html" >Hosting</a></li><li><a href="cuestionario.html" >Cuestionario</a></li></ul><button class="boton tema-boton" id="botonTema" type="button" aria-pressed="false">🌙 Modo oscuro</button></nav>
+<main class="contenedor">
+<section id="jquery">
+<div class="contenedor">
+<h2> jQuery</h2>
+<div class="info">
+<h3>¿Qué es jQuery?</h3>
+<p>
+                    jQuery es una biblioteca de JavaScript
+                    que permite realizar determinadas tareas
+                    de una manera más sencilla.
+                </p>
+</div>
+<div class="info">
+<h3>Ejemplo con jQuery</h3>
+<pre><code>$("#mensaje").text("Hola desde jQuery");</code></pre>
+</div>
+<div class="demo">
+<h3>Demostración de jQuery</h3>
+<button class="boton" id="botonJquery">
+                    Probar jQuery
+                </button>
+</div>
+</div>
+</section><section id="comparacion">
+<div class="contenedor">
+<h2> JavaScript vs. jQuery</h2>
+<div class="tabla-contenedor">
+<table>
+<tr>
+<th>Función</th>
+<th>JavaScript</th>
+<th>jQuery</th>
+</tr>
+<tr>
+<td>Seleccionar elemento</td>
+<td>
+                            document.querySelector("#boton")
+                        </td>
+<td>
+                            $("#boton")
+                        </td>
+</tr>
+<tr>
+<td>Cambiar texto</td>
+<td>
+                            element.textContent = "Hola"
+                        </td>
+<td>
+                            $("#boton").text("Hola")
+                        </td>
+</tr>
+<tr>
+<td>Ocultar elemento</td>
+<td>
+                            element.style.display = "none"
+                        </td>
+<td>
+                            $("#boton").hide()
+                        </td>
+</tr>
+<tr>
+<td>Mostrar elemento</td>
+<td>
+                            element.style.display = "block"
+                        </td>
+<td>
+                            $("#boton").show()
+                        </td>
+</tr>
+<tr>
+<td>Evento clic</td>
+<td>
+                            addEventListener("click", funcion)
+                        </td>
+<td>
+                            $("#boton").click(funcion)
+                        </td>
+</tr>
+</table>
+</div>
+</div>
+</section><section id="recursos">
+<div class="contenedor">
+<h2> Recursos y Bibliografía</h2>
+<div class="tarjetas">
+<div class="tarjeta">
+<h3>MDN Web Docs</h3>
+<p>
+                        Documentación y recursos para aprender
+                        tecnologías web.
+                    </p>
+<br/>
+<a class="boton" href="https://developer.mozilla.org/" target="_blank">
+                        Visitar MDN
+                    </a>
+</div>
+<div class="tarjeta">
+<h3>W3Schools</h3>
+<p>
+                        Sitio educativo con tutoriales y ejemplos
+                        de programación web.
+                    </p>
+<br/>
+<a class="boton" href="https://www.w3schools.com/" target="_blank">
+                        Visitar W3Schools
+                    </a>
+</div>
+<div class="tarjeta">
+<h3>jQuery</h3>
+<p>
+                        Documentación oficial de la biblioteca jQuery.
+                    </p>
+<br/>
+<a class="boton" href="https://jquery.com/" target="_blank">
+                        Visitar jQuery
+                    </a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer><h3> Guía de Desarrollo Web</h3><p>Proyecto académico de desarrollo web.</p><p>HTML • CSS • JavaScript • jQuery • JSON</p><p>© 2026 - Todos los derechos reservados</p></footer>
+</body></html>
