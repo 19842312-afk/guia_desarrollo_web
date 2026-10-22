@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 
 <html lang="es">
 <head>
@@ -361,6 +360,7 @@ button {
                     Enviar
                 </button>
 </form>
+<p id="estadoDiscord" role="status" aria-live="polite"></p>
 </div>
 </section>
 <!-- =========================
@@ -500,7 +500,7 @@ button {
         </p>
 <br/>
 <p>
-            © 2026 - Todos los derechos reservados
+            ©️ 2026 - Todos los derechos reservados
         </p>
 </footer>
 <!-- =========================
@@ -510,6 +510,66 @@ button {
 <!-- =========================
          JAVASCRIPT
     ========================== -->
+
+
+<script>
+// Envío del formulario al canal de Discord mediante el webhook.
+// Nota: al estar en el HTML público, esta URL queda visible para cualquier visitante.
+const discordWebhookURL = "https://discord.com/api/webhooks/1562816870611165275/4ReIHPjRbZWovLXCod0XZ8hQ2XpE1ZVjwQlEQszcVtAmYEqAhvFg2WZC3IEOWK0kVD4_";
+
+const formularioDiscord = document.getElementById("formulario");
+if (formularioDiscord) {
+    formularioDiscord.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        const botonEnviar = formularioDiscord.querySelector('button[type="submit"]');
+        const estado = document.getElementById("estadoDiscord");
+        const nombre = document.getElementById("nombre").value.trim();
+        const correo = document.getElementById("correo").value.trim();
+        const mensaje = document.getElementById("mensajeForm").value.trim();
+
+        if (!nombre || !correo || !mensaje) {
+            estado.textContent = "Completa todos los campos antes de enviar.";
+            return;
+        }
+
+        botonEnviar.disabled = true;
+        estado.textContent = "Enviando mensaje...";
+
+        try {
+            const respuesta = await fetch(discordWebhookURL, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    username: "Guía de Desarrollo Web",
+                    embeds: [{
+                        title: "Nuevo mensaje desde la página web",
+                        color: 3447003,
+                        fields: [
+                            { name: "Nombre", value: nombre.slice(0, 1024), inline: true },
+                            { name: "Correo", value: correo.slice(0, 1024), inline: true },
+                            { name: "Mensaje", value: mensaje.slice(0, 4000), inline: false }
+                        ],
+                        timestamp: new Date().toISOString()
+                    }]
+                })
+            });
+
+            if (!respuesta.ok) {
+                throw new Error("Discord respondió con estado " + respuesta.status);
+            }
+
+            estado.textContent = "¡Mensaje enviado correctamente!";
+            formularioDiscord.reset();
+        } catch (error) {
+            console.error("Error al enviar el mensaje a Discord:", error);
+            estado.textContent = "No se pudo enviar el mensaje. Inténtalo de nuevo más tarde.";
+        } finally {
+            botonEnviar.disabled = false;
+        }
+    });
+}
+</script>
 
 </body>
 </html>
