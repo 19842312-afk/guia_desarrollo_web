@@ -1,108 +1,127 @@
 <!DOCTYPE html>
 
 <html lang="es">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Guía de Desarrollo Web</title>
-<!-- =========================
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Guía de Desarrollo Web</title>
+    <!-- =========================
          ESTILOS CSS
     ========================== -->
 
-<link href="estilos.css" rel="stylesheet"/><script src="https://code.jquery.com/jquery-3.7.1.min.js"></script><script defer="True" src="script.js"></script></head>
+    <link href="estilos.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script defer="True" src="script.js"></script>
+</head>
+
 <body>
-<!-- =========================
+    <!-- =========================
          ENCABEZADO
     ========================== -->
-<header>
-<h1> Guía de Desarrollo Web</h1>
-<p>HTML • CSS • JavaScript • jQuery • JSON</p>
-</header>
-<!-- =========================
+    <header>
+        <h1> Guía de Desarrollo Web</h1>
+        <p>HTML • CSS • JavaScript • jQuery • JSON</p>
+    </header>
+    <!-- =========================
          MENÚ DE NAVEGACIÓN
     ========================== -->
-<nav>
-<ul><li><a href="index.html">Inicio</a></li><li><a href="index.html#objetivos">Objetivos</a></li><li><a href="index.html#html">HTML</a></li><li><a href="index.html#css">CSS</a></li><li><a href="javascript.html">JavaScript</a></li><li><a href="jquery.html">jQuery</a></li><li><a href="json.html">JSON</a></li><li><a href="hosting.html">Hosting</a></li><li><a href="cuestionario.html">Cuestionario</a></li><li><a href="index.html#recursos">Recursos</a></li><li><a href="index.html#entrega">Entrega</a></li></ul>
-<button aria-pressed="false" class="boton tema-boton" id="botonTema" type="button">🌙 Modo oscuro</button><button class="boton idioma-boton" id="botonIdioma" type="button">English</button></nav>
-<!-- =========================
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#objetivos">Objetivos</a></li>
+            <li><a href="index.html#html">HTML</a></li>
+            <li><a href="index.html#css">CSS</a></li>
+            <li><a href="javascript.html">JavaScript</a></li>
+            <li><a href="jquery.html">jQuery</a></li>
+            <li><a href="json.html">JSON</a></li>
+            <li><a href="hosting.html">Hosting</a></li>
+            <li><a href="cuestionario.html">Cuestionario</a></li>
+            <li><a href="index.html#recursos">Recursos</a></li>
+            <li><a href="index.html#entrega">Entrega</a></li>
+        </ul>
+        <button aria-pressed="false" class="boton tema-boton" id="botonTema" type="button">🌙 Modo
+            oscuro</button><button class="boton idioma-boton" id="botonIdioma" type="button">English</button>
+    </nav>
+    <!-- =========================
          INICIO
     ========================== -->
-<section class="inicio" id="inicio">
-<div class="contenedor inicio-contenido">
-<h2>Bienvenido a nuestra guía</h2>
-<p>
+    <section class="inicio" id="inicio">
+        <div class="contenedor inicio-contenido">
+            <h2>Bienvenido a nuestra guía</h2>
+            <p>
                 Esta página fue creada como una guía de estudio
                 para aprender los conceptos básicos del desarrollo web.
             </p>
-<p>
+            <p>
                 Aquí encontrarás información, ejemplos de código,
                 comparaciones y recursos relacionados con HTML,
                 CSS, JavaScript, jQuery y JSON.
             </p>
-<a class="boton" href="#html">
+            <a class="boton" href="#html">
                 Comenzar
             </a>
-</div>
-</section>
-<!-- =========================
+        </div>
+    </section>
+    <!-- =========================
          OBJETIVOS
     ========================== -->
-<section class="objetivos" id="objetivos">
-<div class="contenedor">
-<h2> Objetivos</h2>
-<div class="tarjetas">
-<div class="tarjeta">
-<h3>HTML</h3>
-<p>
+    <section class="objetivos" id="objetivos">
+        <div class="contenedor">
+            <h2> Objetivos</h2>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <h3>HTML</h3>
+                    <p>
                         Conocer cómo se estructura una página web
                         utilizando HTML5.
                     </p>
-</div>
-<div class="tarjeta">
-<h3>CSS</h3>
-<p>
+                </div>
+                <div class="tarjeta">
+                    <h3>CSS</h3>
+                    <p>
                         Aprender a utilizar estilos para mejorar
                         la apariencia de una página.
                     </p>
-</div>
-<div class="tarjeta">
-<h3>JavaScript</h3>
-<p>
+                </div>
+                <div class="tarjeta">
+                    <h3>JavaScript</h3>
+                    <p>
                         Crear funcionalidades e interactividad
                         dentro de una página web.
                     </p>
-</div>
-<div class="tarjeta">
-<h3>jQuery</h3>
-<p>
+                </div>
+                <div class="tarjeta">
+                    <h3>jQuery</h3>
+                    <p>
                         Conocer una biblioteca que facilita
                         determinadas tareas de JavaScript.
                     </p>
-</div>
-</div>
-</div>
-</section>
-<!-- =========================
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========================
          HTML
     ========================== -->
-<section id="html">
-<div class="contenedor">
-<h2> HTML</h2>
-<div class="info">
-<h3>¿Qué es HTML?</h3>
-<p>
+    <section id="html">
+        <div class="contenedor">
+            <h2> HTML</h2>
+            <div class="info">
+                <h3>¿Qué es HTML?</h3>
+                <p>
                     HTML significa HyperText Markup Language.
                     Es el lenguaje utilizado para crear la estructura
                     de las páginas web.
                 </p>
-<p>
+                <p>
                     HTML permite agregar títulos, párrafos,
                     imágenes, enlaces, tablas, formularios y otros elementos.
                 </p>
-</div>
-<div class="info">
-<h3>Ejemplo de HTML</h3>
-<pre><code>&lt;!DOCTYPE html&gt;
+            </div>
+            <div class="info">
+                <h3>Ejemplo de HTML</h3>
+                <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
     &lt;title&gt;Mi página&lt;/title&gt;
@@ -118,31 +137,31 @@
 
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-</div>
-</div>
-</section>
-<!-- =========================
+            </div>
+        </div>
+    </section>
+    <!-- =========================
          CSS
     ========================== -->
-<section id="css">
-<div class="contenedor">
-<h2> CSS</h2>
-<div class="info">
-<h3>¿Qué es CSS?</h3>
-<p>
+    <section id="css">
+        <div class="contenedor">
+            <h2> CSS</h2>
+            <div class="info">
+                <h3>¿Qué es CSS?</h3>
+                <p>
                     CSS significa Cascading Style Sheets.
                     Se utiliza para darle diseño y estilo
                     a las páginas web.
                 </p>
-<p>
+                <p>
                     Con CSS podemos modificar colores,
                     tamaños, fuentes, espacios, fondos,
                     bordes y mucho más.
                 </p>
-</div>
-<div class="info">
-<h3>Ejemplo de CSS</h3>
-<pre><code>body {
+            </div>
+            <div class="info">
+                <h3>Ejemplo de CSS</h3>
+                <pre><code>body {
     background-color: #f4f6f8;
     font-family: Arial;
 }
@@ -155,421 +174,422 @@ button {
     background-color: #3498db;
     color: white;
 }</code></pre>
-</div>
-</div>
-</section>
-<!-- =========================
+            </div>
+        </div>
+    </section>
+    <!-- =========================
          JAVASCRIPT
     ========================== -->
-<section id="javascript">
-<div class="contenedor">
-<h2> JavaScript</h2>
-<div class="info">
-<h3>¿Qué es JavaScript?</h3>
-<p>
+    <section id="javascript">
+        <div class="contenedor">
+            <h2> JavaScript</h2>
+            <div class="info">
+                <h3>¿Qué es JavaScript?</h3>
+                <p>
                     JavaScript es un lenguaje de programación
                     utilizado para agregar interactividad
                     y funcionalidades a las páginas web.
                 </p>
-</div>
-<div class="info">
-<h3>Ejemplo</h3>
-<pre><code>function saludar() {
+            </div>
+            <div class="info">
+                <h3>Ejemplo</h3>
+                <pre><code>function saludar() {
     alert("¡Hola! Bienvenido.");
 }</code></pre>
-</div>
-<div class="demo">
-<h3>Demostración de JavaScript</h3>
-<p id="mensaje">
+            </div>
+            <div class="demo">
+                <h3>Demostración de JavaScript</h3>
+                <p id="mensaje">
                     Presiona el botón
                 </p>
-<button class="boton" onclick="cambiarMensaje()">
+                <button class="boton" onclick="cambiarMensaje()">
                     Cambiar mensaje
                 </button>
-</div>
-</div>
-</section>
-<!-- =========================
+            </div>
+        </div>
+    </section>
+    <!-- =========================
          JQUERY
     ========================== -->
-<section id="jquery">
-<div class="contenedor">
-<h2> jQuery</h2>
-<div class="info">
-<h3>¿Qué es jQuery?</h3>
-<p>
+    <section id="jquery">
+        <div class="contenedor">
+            <h2> jQuery</h2>
+            <div class="info">
+                <h3>¿Qué es jQuery?</h3>
+                <p>
                     jQuery es una biblioteca de JavaScript
                     que permite realizar determinadas tareas
                     de una manera más sencilla.
                 </p>
-</div>
-<div class="info">
-<h3>Ejemplo con jQuery</h3>
-<pre><code>$("#mensaje").text("Hola desde jQuery");</code></pre>
-</div>
-<div class="demo">
-<h3>Demostración de jQuery</h3>
-<button class="boton" id="botonJquery">
+            </div>
+            <div class="info">
+                <h3>Ejemplo con jQuery</h3>
+                <pre><code>$("#mensaje").text("Hola desde jQuery");</code></pre>
+            </div>
+            <div class="demo">
+                <h3>Demostración de jQuery</h3>
+                <button class="boton" id="botonJquery">
                     Probar jQuery
                 </button>
-</div>
-</div>
-</section>
-<!-- =========================
+            </div>
+        </div>
+    </section>
+    <!-- =========================
          JSON
     ========================== -->
-<section id="json">
-<div class="contenedor">
-<h2> JSON</h2>
-<div class="info">
-<h3>¿Qué es JSON?</h3>
-<p>
+    <section id="json">
+        <div class="contenedor">
+            <h2> JSON</h2>
+            <div class="info">
+                <h3>¿Qué es JSON?</h3>
+                <p>
                     JSON significa JavaScript Object Notation.
                     Es un formato utilizado para almacenar
                     y transportar información.
                 </p>
-</div>
-<div class="info">
-<h3>Ejemplo de JSON</h3>
-<pre><code>{
+            </div>
+            <div class="info">
+                <h3>Ejemplo de JSON</h3>
+                <pre><code>{
     "nombre": "Juan",
     "edad": 18,
     "curso": "Programación",
     "activo": true
 }</code></pre>
-</div>
-</div>
-</section>
-<!-- =========================
+            </div>
+        </div>
+    </section>
+    <!-- =========================
          COMPARACIÓN
     ========================== -->
-<section id="comparacion">
-<div class="contenedor">
-<h2> JavaScript vs. jQuery</h2>
-<div class="tabla-contenedor">
-<table>
-<tr>
-<th>Función</th>
-<th>JavaScript</th>
-<th>jQuery</th>
-</tr>
-<tr>
-<td>Seleccionar elemento</td>
-<td>
+    <section id="comparacion">
+        <div class="contenedor">
+            <h2> JavaScript vs. jQuery</h2>
+            <div class="tabla-contenedor">
+                <table>
+                    <tr>
+                        <th>Función</th>
+                        <th>JavaScript</th>
+                        <th>jQuery</th>
+                    </tr>
+                    <tr>
+                        <td>Seleccionar elemento</td>
+                        <td>
                             document.querySelector("#boton")
                         </td>
-<td>
+                        <td>
                             $("#boton")
                         </td>
-</tr>
-<tr>
-<td>Cambiar texto</td>
-<td>
+                    </tr>
+                    <tr>
+                        <td>Cambiar texto</td>
+                        <td>
                             element.textContent = "Hola"
                         </td>
-<td>
+                        <td>
                             $("#boton").text("Hola")
                         </td>
-</tr>
-<tr>
-<td>Ocultar elemento</td>
-<td>
+                    </tr>
+                    <tr>
+                        <td>Ocultar elemento</td>
+                        <td>
                             element.style.display = "none"
                         </td>
-<td>
+                        <td>
                             $("#boton").hide()
                         </td>
-</tr>
-<tr>
-<td>Mostrar elemento</td>
-<td>
+                    </tr>
+                    <tr>
+                        <td>Mostrar elemento</td>
+                        <td>
                             element.style.display = "block"
                         </td>
-<td>
+                        <td>
                             $("#boton").show()
                         </td>
-</tr>
-<tr>
-<td>Evento clic</td>
-<td>
+                    </tr>
+                    <tr>
+                        <td>Evento clic</td>
+                        <td>
                             addEventListener("click", funcion)
                         </td>
-<td>
+                        <td>
                             $("#boton").click(funcion)
                         </td>
-</tr>
-</table>
-</div>
-</div>
-</section>
-<!-- =========================
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- =========================
          EJEMPLOS
     ========================== -->
-<section id="ejemplos">
-<div class="contenedor">
-<h2> Ejemplos de Código</h2>
-<div class="tarjetas">
-<div class="tarjeta">
-<h3>Variable</h3>
-<pre><code>let nombre = "Carlos";</code></pre>
-</div>
-<div class="tarjeta">
-<h3>Condicional</h3>
-<pre><code>if (edad &gt;= 18) {
+    <section id="ejemplos">
+        <div class="contenedor">
+            <h2> Ejemplos de Código</h2>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <h3>Variable</h3>
+                    <pre><code>let nombre = "Carlos";</code></pre>
+                </div>
+                <div class="tarjeta">
+                    <h3>Condicional</h3>
+                    <pre><code>if (edad &gt;= 18) {
     console.log("Mayor de edad");
 }</code></pre>
-</div>
-<div class="tarjeta">
-<h3>Función</h3>
-<pre><code>function sumar(a, b) {
+                </div>
+                <div class="tarjeta">
+                    <h3>Función</h3>
+                    <pre><code>function sumar(a, b) {
     return a + b;
 }</code></pre>
-</div>
-<div class="tarjeta">
-<h3>Arreglo</h3>
-<pre><code>let frutas = [
+                </div>
+                <div class="tarjeta">
+                    <h3>Arreglo</h3>
+                    <pre><code>let frutas = [
     "Manzana",
     "Banano",
     "Uva"
 ];</code></pre>
-</div>
-</div>
-</div>
-</section>
-<!-- =========================
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========================
          FORMULARIO
     ========================== -->
-<section>
-<div class="contenedor">
-<h2> Prueba Interactiva</h2>
-<form id="formulario">
-<label for="nombre">
+    <section>
+        <div class="contenedor">
+            <h2> Prueba Interactiva</h2>
+            <form id="formulario">
+                <label for="nombre">
                     Nombre:
                 </label>
-<input id="nombre" placeholder="Escribe tu nombre" required="" type="text"/>
-<label for="correo">
+                <input id="nombre" placeholder="Escribe tu nombre" required="" type="text" />
+                <label for="correo">
                     Correo:
                 </label>
-<input id="correo" placeholder="ejemplo@gmail.com" required="" type="email"/>
-<label for="mensajeForm">
+                <input id="correo" placeholder="ejemplo@gmail.com" required="" type="email" />
+                <label for="mensajeForm">
                     Mensaje:
                 </label>
-<textarea id="mensajeForm" placeholder="Escribe un mensaje" required=""></textarea>
-<br/><br/>
-<button class="boton" type="submit">
+                <textarea id="mensajeForm" placeholder="Escribe un mensaje" required=""></textarea>
+                <br /><br />
+                <button class="boton" type="submit">
                     Enviar
                 </button>
-</form>
-<p id="estadoDiscord" role="status" aria-live="polite"></p>
-</div>
-</section>
-<!-- =========================
+            </form>
+            <p id="estadoDiscord" role="status" aria-live="polite"></p>
+        </div>
+    </section>
+    <!-- =========================
          RECURSOS
     ========================== -->
-<section id="recursos">
-<div class="contenedor">
-<h2>Recursos y Bibliografía</h2>
-<div class="tarjetas">
-<div class="tarjeta">
-<h3>MDN Web Docs</h3>
-<p>
+    <section id="recursos">
+        <div class="contenedor">
+            <h2>Recursos y Bibliografía</h2>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <h3>MDN Web Docs</h3>
+                    <p>
                         Documentación y recursos para aprender
                         tecnologías web.
                     </p>
-<br/>
-<a class="boton" href="https://developer.mozilla.org/" target="_blank">
+                    <br />
+                    <a class="boton" href="https://developer.mozilla.org/" target="_blank">
                         Visitar MDN
                     </a>
-</div>
-<div class="tarjeta">
-<h3>W3Schools</h3>
-<p>
+                </div>
+                <div class="tarjeta">
+                    <h3>W3Schools</h3>
+                    <p>
                         Sitio educativo con tutoriales y ejemplos
                         de programación web.
                     </p>
-<br/>
-<a class="boton" href="https://www.w3schools.com/" target="_blank">
+                    <br />
+                    <a class="boton" href="https://www.w3schools.com/" target="_blank">
                         Visitar W3Schools
                     </a>
-</div>
-<div class="tarjeta">
-<h3>jQuery</h3>
-<p>
+                </div>
+                <div class="tarjeta">
+                    <h3>jQuery</h3>
+                    <p>
                         Documentación oficial de la biblioteca jQuery.
                     </p>
-<br/>
-<a class="boton" href="https://jquery.com/" target="_blank">
+                    <br />
+                    <a class="boton" href="https://jquery.com/" target="_blank">
                         Visitar jQuery
                     </a>
-</div>
-</div>
-</div>
-</section>
-<!-- =========================
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========================
          CONTROL DE VERSIONES
     ========================== -->
-<section>
-<div class="contenedor">
-<h2> Control de Versiones</h2>
-<div class="info">
-<h3>GitHub</h3>
-<p>
+    <section>
+        <div class="contenedor">
+            <h2> Control de Versiones</h2>
+            <div class="info">
+                <h3>GitHub</h3>
+                <p>
                     GitHub será utilizado para almacenar el código
                     del proyecto y controlar las diferentes versiones.
                 </p>
-<p>
+                <p>
                     Se realizarán commits periódicos para demostrar
                     el avance incremental del proyecto.
                 </p>
-<br/>
-<ul>
-<li>Inicio del proyecto</li>
-<li>Creación de la página principal</li>
-<li>Agregando CSS</li>
-<li>Agregando JavaScript</li>
-<li>Agregando jQuery</li>
-<li>Agregando JSON</li>
-<li>Corrección de errores</li>
-<li>Versión final</li>
-</ul>
-</div>
-</div>
-</section>
-<!-- =========================
+                <br />
+                <ul>
+                    <li>Inicio del proyecto</li>
+                    <li>Creación de la página principal</li>
+                    <li>Agregando CSS</li>
+                    <li>Agregando JavaScript</li>
+                    <li>Agregando jQuery</li>
+                    <li>Agregando JSON</li>
+                    <li>Corrección de errores</li>
+                    <li>Versión final</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- =========================
          VERCEL
     ========================== -->
-<section id="entrega">
-<div class="contenedor">
-<h2> Entrega del Proyecto</h2>
-<div class="enlaces">
-<div class="enlace">
-<h3> GitHub</h3>
-<p>
+    <section id="entrega">
+        <div class="contenedor">
+            <h2> Entrega del Proyecto</h2>
+            <div class="enlaces">
+                <div class="enlace">
+                    <h3> GitHub</h3>
+                    <p>
                         Repositorio público del proyecto.
                     </p>
-<br/>
-<a href="https://github.com/" target="_blank">
+                    <br />
+                    <a href="https://github.com/" target="_blank">
                         https://github.com/
                     </a>
-</div>
-<div class="enlace">
-<h3> Vercel</h3>
-<p>
+                </div>
+                <div class="enlace">
+                    <h3> Vercel</h3>
+                    <p>
                         Aplicación publicada en Internet.
                     </p>
-<br/>
-<a href="https://vercel.com/" target="_blank">
+                    <br />
+                    <a href="https://vercel.com/" target="_blank">
                         https://vercel.com/
                     </a>
-</div>
-</div>
-<br/><br/>
-<div class="info">
-<h3>Formato final de entrega</h3>
-<p>
+                </div>
+            </div>
+            <br /><br />
+            <div class="info">
+                <h3>Formato final de entrega</h3>
+                <p>
                     Para la entrega se deben proporcionar
                     únicamente dos enlaces:
                 </p>
-<br/>
-<p>
-<strong>1. Repositorio público de GitHub</strong>
-</p>
-<p>
-<strong>2. Aplicación desplegada en Vercel</strong>
-</p>
-<br/>
-<p>
+                <br />
+                <p>
+                    <strong>1. Repositorio público de GitHub</strong>
+                </p>
+                <p>
+                    <strong>2. Aplicación desplegada en Vercel</strong>
+                </p>
+                <br />
+                <p>
                     Ejemplo:
                 </p>
-<p>
+                <p>
                     https://nombre-proyecto.vercel.app
                 </p>
-</div>
-</div>
-</section>
-<!-- =========================
+            </div>
+        </div>
+    </section>
+    <!-- =========================
          FOOTER
     ========================== -->
-<footer>
-<h3> Guía de Desarrollo Web</h3>
-<p>
+    <footer>
+        <h3> Guía de Desarrollo Web</h3>
+        <p>
             Proyecto académico de desarrollo web.
         </p>
-<p>
+        <p>
             HTML • CSS • JavaScript • jQuery • JSON
         </p>
-<br/>
-<p>
+        <br />
+        <p>
             ©️ 2026 - Todos los derechos reservados
         </p>
-</footer>
-<!-- =========================
+    </footer>
+    <!-- =========================
          jQUERY
     ========================== -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<!-- =========================
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- =========================
          JAVASCRIPT
     ========================== -->
 
 
-<script>
-// Envío del formulario al canal de Discord mediante el webhook.
-// Nota: al estar en el HTML público, esta URL queda visible para cualquier visitante.
-const discordWebhookURL = "https://discord.com/api/webhooks/1562814751799513122/QcaN9Kq_rRwQLSALmaDlQgrNN7ULZ4sCZWA2JuE-zEL1lqQ_IXrYhmSsWGqn4_qOGTQs";
+    <script>
+        // Envío del formulario al canal de Discord mediante el webhook.
+        // Nota: al estar en el HTML público, esta URL queda visible para cualquier visitante.
+        const discordWebhookURL = "https://discord.com/api/webhooks/1562814751799513122/QcaN9Kq_rRwQLSALmaDlQgrNN7ULZ4sCZWA2JuE-zEL1lqQ_IXrYhmSsWGqn4_qOGTQs";
 
-const formularioDiscord = document.getElementById("formulario");
-if (formularioDiscord) {
-    formularioDiscord.addEventListener("submit", async function (event) {
-        event.preventDefault();
+        const formularioDiscord = document.getElementById("formulario");
+        if (formularioDiscord) {
+            formularioDiscord.addEventListener("submit", async function (event) {
+                event.preventDefault();
 
-        const botonEnviar = formularioDiscord.querySelector('button[type="submit"]');
-        const estado = document.getElementById("estadoDiscord");
-        const nombre = document.getElementById("nombre").value.trim();
-        const correo = document.getElementById("correo").value.trim();
-        const mensaje = document.getElementById("mensajeForm").value.trim();
+                const botonEnviar = formularioDiscord.querySelector('button[type="submit"]');
+                const estado = document.getElementById("estadoDiscord");
+                const nombre = document.getElementById("nombre").value.trim();
+                const correo = document.getElementById("correo").value.trim();
+                const mensaje = document.getElementById("mensajeForm").value.trim();
 
-        if (!nombre || !correo || !mensaje) {
-            estado.textContent = "Completa todos los campos antes de enviar.";
-            return;
-        }
+                if (!nombre || !correo || !mensaje) {
+                    estado.textContent = "Completa todos los campos antes de enviar.";
+                    return;
+                }
 
-        botonEnviar.disabled = true;
-        estado.textContent = "Enviando mensaje...";
+                botonEnviar.disabled = true;
+                estado.textContent = "Enviando mensaje...";
 
-        try {
-            const respuesta = await fetch(discordWebhookURL, {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    username: "Guía de Desarrollo Web",
-                    embeds: [{
-                        title: "Nuevo mensaje desde la página web",
-                        color: 3447003,
-                        fields: [
-                            { name: "Nombre", value: nombre.slice(0, 1024), inline: true },
-                            { name: "Correo", value: correo.slice(0, 1024), inline: true },
-                            { name: "Mensaje", value: mensaje.slice(0, 4000), inline: false }
-                        ],
-                        timestamp: new Date().toISOString()
-                    }]
-                })
+                try {
+                    const respuesta = await fetch(discordWebhookURL, {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({
+                            username: "Guía de Desarrollo Web",
+                            embeds: [{
+                                title: "Nuevo mensaje desde la página web",
+                                color: 3447003,
+                                fields: [
+                                    { name: "Nombre", value: nombre.slice(0, 1024), inline: true },
+                                    { name: "Correo", value: correo.slice(0, 1024), inline: true },
+                                    { name: "Mensaje", value: mensaje.slice(0, 4000), inline: false }
+                                ],
+                                timestamp: new Date().toISOString()
+                            }]
+                        })
+                    });
+
+                    if (!respuesta.ok) {
+                        throw new Error("Discord respondió con estado " + respuesta.status);
+                    }
+
+                    estado.textContent = "¡Mensaje enviado correctamente!";
+                    formularioDiscord.reset();
+                } catch (error) {
+                    console.error("Error al enviar el mensaje a Discord:", error);
+                    estado.textContent = "No se pudo enviar el mensaje. Inténtalo de nuevo más tarde.";
+                } finally {
+                    botonEnviar.disabled = false;
+                }
             });
-
-            if (!respuesta.ok) {
-                throw new Error("Discord respondió con estado " + respuesta.status);
-            }
-
-            estado.textContent = "¡Mensaje enviado correctamente!";
-            formularioDiscord.reset();
-        } catch (error) {
-            console.error("Error al enviar el mensaje a Discord:", error);
-            estado.textContent = "No se pudo enviar el mensaje. Inténtalo de nuevo más tarde.";
-        } finally {
-            botonEnviar.disabled = false;
         }
-    });
-}
-</script>
+    </script>
 
 </body>
+
 </html>
